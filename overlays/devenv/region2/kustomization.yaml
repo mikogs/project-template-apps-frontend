@@ -7,4 +7,4 @@ kind: Kustomization
 images:
 - name: frontend-image-placeholder
   newName: mikogs/project-template-frontend
-  newTag: 652b394
+  newTag: a572525
