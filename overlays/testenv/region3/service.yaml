@@ -12,5 +12,5 @@ spec:
       protocol: TCP
       port: 8080
       targetPort: 8080
-      frontendPort: 30232
+      nodePort: 30232
   type: NodePort
