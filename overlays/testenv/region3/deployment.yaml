@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend-region3
+  labels:
+    app: frontend-region3
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: frontend-region3
+  template:
+    metadata:
+      labels:
+        app: frontend-region3
+    spec:
+      containers:
+        - name: frontend
+          image: frontend-image-placeholder
+          ports:
+            - containerPort: 8080

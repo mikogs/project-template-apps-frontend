@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: frontend-region3
+  labels:
+    app: frontend-region3
+spec:
+  selector:
+    app: frontend-region3
+  ports:
+    - name: tcp
+      protocol: TCP
+      port: 8080
+      targetPort: 8080
+      frontendPort: 30132
+  type: NodePort

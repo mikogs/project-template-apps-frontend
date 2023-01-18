@@ -1,0 +1,10 @@
+namespace: testenv-apps
+resources:
+- deployment.yaml
+- service.yaml
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+images:
+- name: frontend-image-placeholder
+  newName: mikogs/project-template-frontend
+  newTag: v0.1.9
