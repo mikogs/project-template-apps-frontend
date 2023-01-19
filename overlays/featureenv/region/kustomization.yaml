@@ -3,7 +3,7 @@ resources:
 - service.yaml
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-images:
-- name: frontend-image-placeholder
-  newName: mikogs/project-template-frontend
-  newTag: d99f1ae
+#images:
+#- name: frontend-image-placeholder
+#  newName: mikogs/project-template-frontend
+#  newTag: d99f1ae
